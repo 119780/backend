@@ -1,0 +1,12 @@
+{
+  "name": "pvp-ranked",
+  "version": "0.6.0",
+  "imports": {
+    "hono":     "jsr:@hono/hono@^4.4.0",
+    "postgres": "npm:postgres@3.4.4"
+  },
+  "tasks": {
+    "dev":   "deno run --watch --allow-net --allow-env --env-file=.env --allow-read=. --allow-run=docker main.ts",
+    "start": "deno run --allow-net --allow-env --env-file=.env --allow-read=./migrations --allow-run=docker main.ts"
+  }
+}
